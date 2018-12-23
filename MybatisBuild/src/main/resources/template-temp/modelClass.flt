@@ -1,0 +1,18 @@
+package ${fileInfoMap.modelClassFile.packageName};
+
+import com.qsqx.model.base.BasePO;
+public class ${fileInfoMap.modelClassFile.name} extends BasePO {
+
+	<#list table.columns as column>
+		private ${column.multipleColumnType.modelSimpleType} ${column.multipleColumnNames.modelName}; //${column.remark}
+	</#list>
+	<#list table.columns as column>
+		public ${column.multipleColumnType.modelType} get${column.multipleColumnNames.modelNameFirstUp}() {
+	        return ${column.multipleColumnNames.modelName};
+	    }
+	
+	    public void set${column.multipleColumnNames.modelNameFirstUp}(${column.multipleColumnType.modelType} ${column.multipleColumnNames.modelName}) {
+	        this.${column.multipleColumnNames.modelName} = ${column.multipleColumnNames.modelName};
+	    }
+	</#list>
+}

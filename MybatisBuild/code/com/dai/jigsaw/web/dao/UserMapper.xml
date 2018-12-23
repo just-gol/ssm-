@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dai.jigsaw.web.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.dai.jigsaw.web.model.User">
+    			<id column="id" property="id" jdbcType="BIGINT" />
+    			<result column="name" property="name" jdbcType="VARCHAR" />
+    			<result column="age" property="age" jdbcType="INTEGER" />
+    			<result column="create_date" property="createDate" jdbcType="DATETIME" />
+    			<result column="update_date" property="updateDate" jdbcType="DATETIME" />
+    			<result column="is_delete" property="isDelete" jdbcType="BIT" />
+    			<result column="creator" property="creator" jdbcType="BIGINT" />
+    			<result column="updater" property="updater" jdbcType="BIGINT" />
+    </resultMap>
+     <sql id="Base_Column_List">
+       <trim prefix="" suffix="" suffixOverrides=",">
+     		id,
+     		name,
+     		age,
+     		create_date,
+     		update_date,
+     		is_delete,
+     		creator,
+     		updater,
+    	</trim>
+    </sql>
+    <!--增加数据 insertSelective-->
+    <insert id="insertSelective" parameterType="com.dai.jigsaw.web.model.User">
+        insert into USER
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+        		<if test="id != null">
+                	id,
+            	</if>
+        		<if test="name != null">
+                	name,
+            	</if>
+        		<if test="age != null">
+                	age,
+            	</if>
+        		<if test="createDate != null">
+                	create_date,
+            	</if>
+        		<if test="updateDate != null">
+                	update_date,
+            	</if>
+        		<if test="isDelete != null">
+                	is_delete,
+            	</if>
+        		<if test="creator != null">
+                	creator,
+            	</if>
+        		<if test="updater != null">
+                	updater,
+            	</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+        		<if test="id != null">
+        			#{id,jdbcType=BIGINT},
+            	</if>
+        		<if test="name != null">
+        			#{name,jdbcType=VARCHAR},
+            	</if>
+        		<if test="age != null">
+        			#{age,jdbcType=INTEGER},
+            	</if>
+        		<if test="createDate != null">
+        			#{createDate,jdbcType=DATETIME},
+            	</if>
+        		<if test="updateDate != null">
+        			#{updateDate,jdbcType=DATETIME},
+            	</if>
+        		<if test="isDelete != null">
+        			#{isDelete,jdbcType=BIT},
+            	</if>
+        		<if test="creator != null">
+        			#{creator,jdbcType=BIGINT},
+            	</if>
+        		<if test="updater != null">
+        			#{updater,jdbcType=BIGINT},
+            	</if>
+        </trim>
+    </insert>
+    <!--删除数据 deleteByPrimaryKeySelective-->
+    <delete id="deleteByPrimaryKeySelective" parameterType="com.dai.jigsaw.web.model.User">
+        delete from USER
+        where
+        			id = #{id,jdbcType=BIGINT}
+    </delete>
+    <delete id="deleteByIds" parameterType="java.lang.String">
+		delete
+		from USER
+		where
+        			id in (${_parameter})
+	</delete>
+    <!--修改数据 updateByPrimaryKeySelective-->
+    <update id="updateByPrimaryKeySelective" parameterType="com.dai.jigsaw.web.model.User">
+        update USER
+        <set>
+        		<if test="id != null">
+                	id = #{id,jdbcType=BIGINT},
+            	</if>
+        		<if test="name != null">
+                	name = #{name,jdbcType=VARCHAR},
+            	</if>
+        		<if test="age != null">
+                	age = #{age,jdbcType=INTEGER},
+            	</if>
+        		<if test="createDate != null">
+                	create_date = #{createDate,jdbcType=DATETIME},
+            	</if>
+        		<if test="updateDate != null">
+                	update_date = #{updateDate,jdbcType=DATETIME},
+            	</if>
+        		<if test="isDelete != null">
+                	is_delete = #{isDelete,jdbcType=BIT},
+            	</if>
+        		<if test="creator != null">
+                	creator = #{creator,jdbcType=BIGINT},
+            	</if>
+        		<if test="updater != null">
+                	updater = #{updater,jdbcType=BIGINT},
+            	</if>
+        </set>
+        where 
+        			id = #{id,jdbcType=BIGINT}
+    </update>
+    
+     <select id="selectByWhereParam" resultMap="BaseResultMap" parameterType="com.account.gms.core.feature.orm.mybatis.WhereParam">
+        select
+        	<include refid="Base_Column_List" />
+        from USER 
+        <if test="whereString != null">
+              where ${whereString}
+        </if>
+        <if test="orderbyString != null">
+			order by ${orderbyString}
+		</if>
+    </select>
+
+	 <select id="selectByWhereParamAndPage" resultMap="BaseResultMap" parameterType="com.account.gms.core.feature.orm.mybatis.WhereParam">
+        select
+        <include refid="Base_Column_List" />
+        from USER 
+        <if test="whereString != null">
+              where ${whereString}
+        </if>
+        <if test="orderbyString != null">
+			order by ${orderbyString}
+		</if>
+    </select>
+    
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List" />
+        from USER 
+        where  
+        			id = #{id,jdbcType=BIGINT}
+    </select>
+    
+    
+</mapper>

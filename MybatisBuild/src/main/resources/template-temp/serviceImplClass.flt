@@ -1,0 +1,21 @@
+package ${fileInfoMap.serviceImplClassFile.packageName};
+
+import javax.annotation.Resource;
+import org.springframework.stereotype.Service;
+import com.qsqx.biz.base.AbstractService;
+import com.qsqx.dal.base.BaseMapper;
+import ${fileInfoMap.mapperClassFile.packageName}.${fileInfoMap.mapperClassFile.name};
+import ${fileInfoMap.modelClassFile.packageName}.${fileInfoMap.modelClassFile.name};
+import ${fileInfoMap.serviceClassFile.packageName}.${fileInfoMap.serviceClassFile.name};
+
+@Service("${fileInfoMap.serviceClassFile.name?uncap_first}")
+public class ${fileInfoMap.serviceImplClassFile.name} extends AbstractService<${fileInfoMap.modelClassFile.name}, Long> implements ${fileInfoMap.serviceClassFile.name} {
+
+ 	@Resource
+    private ${fileInfoMap.mapperClassFile.name} ${fileInfoMap.mapperClassFile.name?uncap_first};
+
+    @Override
+    public  BaseMapper<User, Long> getMapper(){
+        return ${fileInfoMap.mapperClassFile.name?uncap_first};
+    }
+}
