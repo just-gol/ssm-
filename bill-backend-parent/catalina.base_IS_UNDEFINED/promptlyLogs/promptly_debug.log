@@ -1,0 +1,76 @@
+[2018-12-18 09:47:58,015] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 09:48:00,016] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 09:48:00,016] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 09:48:00,016] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 09:48:03,696] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 09:48:03,881] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Parsed mapper file: 'file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\mappers\UserMapper.xml]'  
+[2018-12-18 09:51:30,820] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - Creating a new SqlSession  
+[2018-12-18 09:51:30,827] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4718bfc3] was not registered for synchronization because synchronization is not active  
+[2018-12-18 09:51:30,831] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4718bfc3]  
+[2018-12-18 09:57:03,715] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 09:57:04,900] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 09:57:04,900] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 09:57:04,900] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 09:57:07,508] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 09:57:07,591] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Parsed mapper file: 'file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\mappers\UserMapper.xml]'  
+[2018-12-18 09:57:18,580] [DEBUG] - [http-nio-8080-exec-2] [] [org.mybatis.spring.SqlSessionUtils] [] - Creating a new SqlSession  
+[2018-12-18 09:57:18,586] [DEBUG] - [http-nio-8080-exec-2] [] [org.mybatis.spring.SqlSessionUtils] [] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75348241] was not registered for synchronization because synchronization is not active  
+[2018-12-18 09:57:18,593] [DEBUG] - [http-nio-8080-exec-2] [] [org.mybatis.spring.transaction.SpringManagedTransaction] [] - JDBC Connection [com.mysql.jdbc.JDBC4Connection@75afcf19] will not be managed by Spring  
+[2018-12-18 09:57:18,595] [DEBUG] - [http-nio-8080-exec-2] [] [com.qsqx.mapper.UserMapper.select] [] - ==>  Preparing: select * from t_user;   
+[2018-12-18 09:57:18,607] [DEBUG] - [http-nio-8080-exec-2] [] [com.qsqx.mapper.UserMapper.select] [] - ==> Parameters:   
+[2018-12-18 09:57:18,633] [DEBUG] - [http-nio-8080-exec-2] [] [com.qsqx.mapper.UserMapper.select] [] - <==      Total: 5  
+[2018-12-18 09:57:18,634] [DEBUG] - [http-nio-8080-exec-2] [] [org.mybatis.spring.SqlSessionUtils] [] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75348241]  
+[2018-12-18 10:08:04,625] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 10:08:06,609] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 10:08:06,609] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 10:08:06,609] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 10:21:18,438] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 10:21:20,200] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 10:21:20,200] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 10:21:20,200] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 10:21:22,854] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 10:32:32,905] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 10:32:34,551] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 10:32:34,551] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 10:32:34,551] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 11:05:12,979] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 11:06:03,520] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 11:06:04,953] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 11:06:04,953] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 11:06:04,953] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 11:11:42,281] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 11:11:44,333] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 11:11:44,333] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 11:11:44,334] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 11:32:12,595] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 11:32:14,443] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 11:32:14,443] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 11:32:14,443] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 11:49:31,819] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 11:49:33,199] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 11:49:33,200] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 11:49:33,200] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 13:44:20,775] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 13:44:22,685] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 13:44:22,685] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 13:44:22,685] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 13:44:25,502] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 13:48:16,685] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 13:48:18,477] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 13:48:18,477] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 13:48:18,477] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 13:48:21,617] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 13:48:21,761] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Parsed mapper file: 'file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\mappers\UserMapper.xml]'  
+[2018-12-18 13:51:49,788] [DEBUG] - [restartedMain] [] [com.qsqx.Application] [] - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE  
+[2018-12-18 13:51:51,287] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Identified candidate component class: file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\com\qsqx\mapper\UserMapper.class]  
+[2018-12-18 13:51:51,287] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Creating MapperFactoryBean with name 'userMapper' and 'com.qsqx.mapper.UserMapper' mapperInterface  
+[2018-12-18 13:51:51,287] [DEBUG] - [restartedMain] [] [org.mybatis.spring.mapper.ClassPathMapperScanner] [] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.  
+[2018-12-18 13:51:54,255] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Scanned package: 'com.xdd.entity' for aliases  
+[2018-12-18 13:51:54,363] [DEBUG] - [restartedMain] [] [org.mybatis.spring.SqlSessionFactoryBean] [] - Parsed mapper file: 'file [E:\workspace\ide\bill-backend-parent\bill-backend-dao\target\classes\mappers\UserMapper.xml]'  
+[2018-12-18 13:52:11,080] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - Creating a new SqlSession  
+[2018-12-18 13:52:11,087] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e5bd245] was not registered for synchronization because synchronization is not active  
+[2018-12-18 13:52:11,099] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.transaction.SpringManagedTransaction] [] - JDBC Connection [com.mysql.jdbc.JDBC4Connection@373f7e30] will not be managed by Spring  
+[2018-12-18 13:52:11,101] [DEBUG] - [http-nio-8080-exec-1] [] [com.qsqx.mapper.UserMapper.selectByPrimaryKey] [] - ==>  Preparing: select id, fullName, userType, addedTime, money from t_user where id = ?   
+[2018-12-18 13:52:11,118] [DEBUG] - [http-nio-8080-exec-1] [] [com.qsqx.mapper.UserMapper.selectByPrimaryKey] [] - ==> Parameters: 1(Long)  
+[2018-12-18 13:52:11,139] [DEBUG] - [http-nio-8080-exec-1] [] [com.qsqx.mapper.UserMapper.selectByPrimaryKey] [] - <==      Total: 1  
+[2018-12-18 13:52:11,140] [DEBUG] - [http-nio-8080-exec-1] [] [org.mybatis.spring.SqlSessionUtils] [] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e5bd245]  

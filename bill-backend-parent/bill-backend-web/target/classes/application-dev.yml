@@ -1,0 +1,75 @@
+server:
+  port: 8080
+  servlet-path: /
+  connection-timeout: 60000
+  tomcat:
+    uri-encoding: utf-8
+    min-spare-threads: 500
+    max-threads: 2000
+    max-connections: 1000
+    accept-count: 1000
+  #ssl:
+    #key-store: 1539306243348.pfx
+    #key-store-password: 1539306243348.pfx
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #mysql驱动包8.0 驱动路径换成 com.mysql.cj.jdbc.Driver 连接加上&serverTimezone=GMT%2B8的属性 
+    #serverTimezone 不加会乱码 新版的驱动包才会有这个问题
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/data_gen?characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+    # 下面为连接池的补充设置，应用到上面所有数据源中
+    # 初始化大小，最小，最大
+    initialSize: 15
+    #允许的最小空闲连接数，空闲连接超时踢除过程会最少保留的连接数 
+    minIdle: 15
+    #允许的最大同时使用中(在被业务线程持有，还没有归还给druid) 的连接数 
+    maxActive: 500
+    # 配置获取连接等待超时的时间
+    maxWait: 60000
+    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    # 周期性剔除长时间呆在池子里未被使用的空闲连接, 
+    timeBetweenEvictionRunsMillis: 60000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    #空闲多久可以认为是空闲太长而需要剔除
+    minEvictableIdleTimeMillis: 300000
+    # 验证数据库连接的查询语句，这个查询语句必须是至少返回一条数据的SELECT语句
+    validationQuery: SELECT 1
+    # 建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
+    testWhileIdle: true
+    # 申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+    testOnBorrow: false
+    # 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+    testOnReturn: false
+    # 是否缓存preparedStatement，也就是PSCache。PSCache对支持游标的数据库性能提升巨大，比如说oracle。在mysql下建议关闭。
+    poolPreparedStatements: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,slf4j
+    # 合并多个DruidDataSource的监控数据
+    useGlobalDataSourceStat: true
+    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+ 
+  #spring.redis
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 12345
+    timeout: 20000
+    #cluster:
+      #nodes: 192.168.211.134:7000,192.168.211.134:7001
+      #- 
+      #max-redirects: 
+    
+diamond:
+  dataId: common_config    
+  group: DEFAULT_GROUP
+  serverAddr: 192.168.0.102
+  #serverAddr: 127.0.0.1,10.126.53.16,10.126.53.17   
+ 
